@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_recipe/categories_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Deli Meals'),
       ),
       body: Center(
-        child: Text('My Recipe'),
+        child: CategoriesScreen(),
       ),
     );
   }
