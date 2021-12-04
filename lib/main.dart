@@ -13,7 +13,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Recipe',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'Raleway',
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.teal,
+        ).copyWith(
+          secondary: Colors.tealAccent,
+        ),
+        textTheme: const TextTheme(
+            bodyText1: TextStyle(color: Colors.amber),
+            bodyText2: TextStyle(color: Colors.black),
+            subtitle1: TextStyle(
+                fontSize: 20,
+                fontFamily: 'Roboto',
+                fontWeight: FontWeight.bold)),
       ),
       home: const MyHomePage(),
     );
