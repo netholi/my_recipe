@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       // home: const MyHomePage(),
       initialRoute: '/', //default is'/'
       routes: {
-        '/': (ctx) => CategoriesScreen(), //   '/' is home
+        '/': (ctx) => MyHomePage(), //   '/' is home
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
       },
     );
