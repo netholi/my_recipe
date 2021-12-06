@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_recipe/screens/meal_detail_screen.dart';
+import 'package:my_recipe/screens/tabs_screen.dart';
 import 'screens/categories_screen.dart';
 import 'package:my_recipe/screens/category_meals_screen.dart';
 
@@ -58,11 +59,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Deli Meals'),
-      ),
       body: Center(
-        child: CategoriesScreen(),
+        child: TabsScreen(),
       ),
     );
   }
